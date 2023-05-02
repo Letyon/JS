@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='ko'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Document</title>
+        <script>
+            // while문 1 ~ 100 범위의 값 하나 추출
+            // up and down으로 답 맞추는 게임 만들기
+            var value = prompt('수를 입력해주세요.');
+            console.log(value);
+
+            var i = Math.floor(Math.random()*100);
+
+            while(value !== i){
+                if(value > i){
+                    console.log("down입니다.");
+                }else if(value < i){
+                    console.log("up입니다.");
+                }
+                value = prompt(`수를 입력해주세요.`);
+            }
+            console.log('정답입니다.')
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
